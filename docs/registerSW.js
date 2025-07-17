@@ -1,0 +1,1 @@
+if('serviceWorker' in navigator) {window.addEventListener('load', () => {navigator.serviceWorker.register('/tip-kai-react/sw.js', { scope: '/tip-kai-react/' })})}
