@@ -8,16 +8,21 @@ export default defineConfig({
     react(),
     VitePWA({
       registerType: 'autoUpdate',
+      workbox: {
+        cleanupOutdatedCaches: true,
+        clientsClaim: true,
+        skipWaiting: true,
+      },
       includeAssets: ['favicon.svg', 'robots.txt', 'apple-touch-icon.png'],
       manifest: {
         name: 'tip-kai-react-dev',
         short_name: 'tip-2',
         description: 'Tip Kai Time',
-        orientation: 'landscape',
         theme_color: '#ffffff',
         background_color: '#ffffff',
-        display: 'standalone',
-        start_url: '/tip-kai-react/',
+        orientation: 'landscape',
+        display: 'fullscreen',
+        start_url: '/tip-kai-react?fullscreen=true',
         icons: [
           {
             src: '/tip-kai-react/android-chrome-192x192.png',
