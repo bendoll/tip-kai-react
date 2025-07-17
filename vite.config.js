@@ -55,4 +55,5 @@ export default defineConfig({
   build: {
     outDir: 'build',
   },
+  base: '/tip-kai-react/',
 });
