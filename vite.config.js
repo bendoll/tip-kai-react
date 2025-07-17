@@ -17,29 +17,29 @@ export default defineConfig({
         theme_color: '#ffffff',
         background_color: '#ffffff',
         display: 'standalone',
-        start_url: '/',
+        start_url: '/tip-kai-react/',
         icons: [
           {
-            src: 'android-chrome-192x192.png',
+            src: '/tip-kai-react/android-chrome-192x192.png',
             sizes: '192x192',
             type: 'image/png'
           },
           {
-            src: 'android-chrome-512x512.png',
+            src: '/tip-kai-react/android-chrome-512x512.png',
             sizes: '512x512',
             type: 'image/png'
           }
         ],
         screenshots: [
           {
-            src: 'screenshot_desktop.png',
+            src: '/tip-kai-react/screenshot_desktop.png',
             sizes: '2048x1536',
             type: 'image/png',
             form_factor: 'wide',
             label: 'App in landscape orientation.'
           },
           {
-            src: 'screenshot_narrow.png',
+            src: '/tip-kai-react/screenshot_narrow.png',
             sizes: '1536x2048',
             type: 'image/png',
             form_factor: 'narrow',
@@ -53,7 +53,7 @@ export default defineConfig({
     port: 9001,
   },
   build: {
-    outDir: 'build',
+    outDir: 'docs',
   },
   base: '/tip-kai-react/',
 });
